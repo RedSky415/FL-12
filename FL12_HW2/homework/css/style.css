@@ -8,7 +8,7 @@
   .tm-sidebar, .tm-team-img, .gallery-container, .carousel-indicators, .tm-main-content section:last-of-type, section:before
   { 
     display: none;
-    animation: none;
+    
   }
  .tm-team-description-container{
     margin: 0 auto;
@@ -41,7 +41,7 @@ li:nth-child(odd)
    }
    section
    {
-    padding:5;
+    padding:5px;
    }
   .tm-main-content
   {
