@@ -1,0 +1,208 @@
+@mixin logo
+{
+	display: flex;
+	align-items: center;
+    
+      p {
+				padding: 30px 0 0 10px;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-family: $font;
+				font-size: 25px;
+				margin-top: 0;
+				font-weight: bold;
+				line-height: 18px;
+				span {
+
+					font-size: 8px;
+				}
+		}
+}
+@mixin join
+{
+	display: block;
+	background-color: $buttonColor;
+	color: white;
+	width: 120px;
+	height: 40px;
+	font-family: $font;
+	text-align: center;
+	border-radius: 4px;
+	border: none;
+	font-weight: bold;
+}
+@mixin text
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	color: $textColor;
+		.section_card_heading {
+					font-size: 20px;
+					font-weight: bold;
+				}
+				.section_card_text {
+					width: 70%;
+					text-align: justify;
+					font-family:$fontCard;
+					color:#ccd9e2;
+				}
+
+}
+header 
+{
+	background-image: $bckImage;
+	height: 550px;
+    border-bottom-right-radius: 45%;
+    background-size: cover;
+    background-position: center;
+    	
+    	div.header-wrap {
+		               margin-left: 145px;
+		               
+		              .landing-logo {
+			            @include logo;
+			            color:$colorLogo;
+			             }
+
+			          .header_heading {
+				                margin-top: 30px;
+				                margin-bottom: 0px;
+			                    clear: both;
+			                    display: block;
+			                    width: 472px;
+			                    font: bold 60px $fontHead;
+			                    color:$headingColor;
+			                    }
+			           .header_text{                               
+                                margin-left: -30px;
+			                    white-space: pre;
+			                    font-family: $font;
+			                    font-size: 13px;
+			                    color:$headerColor;
+			                    
+			                  }
+			                  button{
+			                  @include join;
+			                  margin-left: 10px;
+			                  float:left;
+			                  }
+
+			                a
+			                {
+			                font-family: $font;
+	                        color: white;
+	                        margin-left: 100px;                       
+			               }
+			           }									
+}
+body
+{
+	
+	margin: 0 auto;
+	background-color: $bckColor;
+}
+main 
+{   margin-top: 5px;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+
+	 .section_text {
+	    text-align: center;
+		font-size: 45px;
+		font-family: $fontHead;
+		color:$sectionText;
+		}
+
+	.section_card_wrap {
+		   max-width: 70%;
+		   text-align: center;
+		   margin-left: 15%;
+		  .section_card
+		      { 
+		      display:flex;
+		       background-color: $background;
+		       margin-bottom: 25px;
+		       border-radius: 8px;
+		        .section_card_img
+		         {
+		          width: 69%;
+				  border-radius: 5px;
+		          float: left;
+		          margin: 15px;
+		         }
+		         .section_card_right_container
+		         {
+		         @include text;
+		           a {
+		            color:$textColor;
+		           }
+		         }
+		      }
+		}
+		.section_banner {
+		   position: relative;
+		   top: 70px;
+		   z-index: 1;
+		   width: 80%;
+		   height: 130px;
+		   margin: 0 auto;
+		   background-image: linear-gradient(to right, $StartGradient, $EndGradient);
+		   border-radius: 5px;
+		   .section_banner_text_wrap
+		   {
+		   
+		    width:50%;
+		    margin-left:200px;
+            .section_banner_heading
+             {
+              font-size: 30px;
+              margin-top: 20px;
+               margin-bottom: 0px;
+               color:$bannerHeading;
+               font-weight:bold;
+             }
+               .section_banner_text
+               {
+               color: white;
+               }
+             
+		   }
+		.section_banner_button {
+			@include join;
+			position: relative;
+		   bottom: 55px;
+		   z-index: 1;
+			margin-left:70%  ;
+
+		}
+	 }
+}
+footer {
+	background-color: $background;
+	height: 242px;
+	color: white;
+	display: flex;
+	align-items: flex-end;
+	font-family: $font;
+	div.footer-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+		height: 80%;
+		.footer_text {
+			font-size: small;
+			max-width: 290px;
+		}
+		.footer_logo {
+			@include logo
+		}
+	}
+}
+
+
