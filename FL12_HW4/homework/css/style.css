@@ -1,0 +1,162 @@
+body
+{
+	margin: 0 ;
+}
+
+
+
+.fixed-nav {
+    background-color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 10%;
+
+}
+
+.sidebar {
+    z-index: 10;
+    position: fixed;
+     padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    height: 60px;
+    top: 0;
+    
+}
+.sidebar p {
+	font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.fixed-nav ul{
+	font-size: 16px;
+	width: 30%;
+    margin: 0px;
+    display: flex;
+    float: right;
+    padding-top: 0;
+}
+
+.nav-item {
+    list-style: none;
+    width: 30%;
+    margin-right: 30px;
+}
+
+.nav-item-link {
+    text-decoration: none;
+    color: #9a9ea6;
+    display: block;
+    padding: 10px;  
+}
+.fixed-nav li:hover a {
+	color: #bfba55;
+}
+.pic-head {
+	background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(../img/home-bg.jpg);
+	height: 750px;
+	background-size: cover;
+    background-position: center;
+    text-align: center;
+
+ }
+
+ .pic-head h2 {
+ 	color: white;
+ 	padding-top: 20%;
+ 	font-size: 60px;
+ 	font-weight: bold;
+ 	padding-bottom: 0px;
+ 	margin-bottom: 0;
+ }
+
+.pic-head p {
+	color: #bfba55;
+	letter-spacing: 2px;
+}
+button {
+	margin-top: 40px;
+	background-color: white;
+	border-radius: 25px;
+	height: 45px;
+	width: 150px;
+	font-size: 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border: none;
+	font-weight: bold;
+}
+
+.blog {
+	margin-top: 5%;
+    margin-bottom: 5%;
+	
+}
+.content, .footer-content{
+	width: 60%;
+    margin: 0 auto;
+     
+}
+.blog-post img {
+    width: 100%;
+}
+.content h2 {
+	text-align: left;
+	font-size: 25px;
+	margin-bottom: 9px;
+}
+.author {
+	width: 50px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.stats  {
+display: flex;
+align-items: center;
+margin-bottom: 13px;
+}
+.stats span {
+	margin-right: 20px;
+}
+.content p {
+	line-height: 22px;
+	color: #777;
+	margin-bottom: 40px;
+}
+ 
+.button-blog {
+	margin-top: 0px;
+	text-transform: none;
+	border: 1px #777 solid;
+	font-size: 12px;
+	font-weight: normal;
+	color: #777;
+}
+hr {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.footer {
+	color: white;
+	background-color: black;
+}
+ .footer-content {
+ 	padding-top: 5%;
+ 	padding-bottom: 5%;
+ }
+ .table-head {
+ 	font-weight: bold;
+ 	font-size: 25px;
+ }
+ .td1 {
+ 	
+ 	padding-right: 150px;
+ 	padding-bottom: 15px;
+
+ }
